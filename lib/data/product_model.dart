@@ -1,4 +1,4 @@
-import '../../domain/product.dart';
+import '../domain/product.dart';
 
 class ProductModel extends Product {
   ProductModel({
@@ -14,8 +14,8 @@ class ProductModel extends Product {
     return ProductModel(
       id: json['id'],
       title: json['title'],
-      price: json['price'].toDouble(),
-      rating: json['rating'].toDouble(),
+      price: (json['price']).toDouble(),
+      rating: (json['rating']).toDouble(),
       description: json['description'],
       thumbnail: json['thumbnail'],
     );
